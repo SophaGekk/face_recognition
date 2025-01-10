@@ -377,7 +377,7 @@ def process_recognition_video(message):
         bot.register_next_step_handler(message, process_recognition_video)
 
 
-ALLOWED_USER_IDS = [7329769633] #ID пользователей с разрешенным доступом 
+ALLOWED_USER_IDS = [] #ID пользователей с разрешенным доступом 
 # /////////////////////
 @bot.message_handler(func=lambda message: message.text == "Камера")
 def recogn_user(message):
